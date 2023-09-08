@@ -1,0 +1,18 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in);
+        
+        int num = sc.nextInt();
+        
+        int years = num/365;
+        int remainingDays = num - (years * 365);
+        int weeks = remainingDays/7;
+        int days = remainingDays - (weeks * 7);
+        
+        System.out.println(years);
+        System.out.println(weeks);
+        System.out.println(days);
+        // Write your code here
+    }
+}
